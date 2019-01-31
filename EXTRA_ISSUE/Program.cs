@@ -18,15 +18,14 @@ namespace EXTRA_ISSUE
             Def_circle();
             Console.WriteLine("3.Попадает ли точка в окружность с произвольным центром");
             Def_circle_pro();
-           Console.Read();
+            Console.Read();
 
-        }
-        
+        } 
         static void Tall_Year()
         {
             Console.WriteLine("Введите год");
             int year = Convert.ToInt32(Console.ReadLine());
-            if (year%4==0 && year % 100 != 0 | year % 400 == 0)
+            if (year%4==0 && year % 100 != 0 || year % 400 == 0)
             {
                 Console.WriteLine("Год высокосный");                
             }
@@ -34,9 +33,8 @@ namespace EXTRA_ISSUE
             {
                 Console.WriteLine("Неа), год не высокосный");
             }
-
-
         }
+
         static void Def_qr()
         {
             Console.WriteLine("Введите координату x");
@@ -63,8 +61,8 @@ namespace EXTRA_ISSUE
             {
                 Console.WriteLine("Точка находится на одной из осей");
             }
-
         }
+
         static void Def_circle()
         {
             Console.WriteLine("Радиус окружности");
@@ -81,9 +79,8 @@ namespace EXTRA_ISSUE
             {
                 Console.WriteLine("Точка находится вне окружности");
             }
-           
-
         }
+
         static void Def_circle_pro()
         {
             Console.WriteLine("Введите координату x_0 центра круга");
@@ -105,6 +102,5 @@ namespace EXTRA_ISSUE
                 Console.WriteLine("Точка находится вне окружности");
             }
         }
-
     }
 }
